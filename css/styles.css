@@ -466,6 +466,11 @@ h1{
 .phone-icon{
   color: #f9f9f9;
 }
+
+.place-order{
+  background: #d5e2d8b2;
+}
+
 /* Hero container styling */
 .hero-container {
 position: relative;
@@ -498,3 +503,81 @@ border-radius: 8px; /* Rounded text background */
 text-align: center;
 }
 
+
+
+.admin {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/1600x900/?admin,technology') no-repeat center center/cover;
+  color: white;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn:hover {
+  background-color: #e8073f;
+  transform: translateX(-50%) scale(1.05);
+}
+
+.logout-btn {
+  position: absolute; /* Allows precise positioning relative to the viewport */
+  bottom: 30px; /* Distance from the bottom of the page */
+  left: 50%; /* Aligns the button horizontally to the center */
+  transform: translateX(-50%);
+  background-color: #ebdc08;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.category-card img {
+  height: 150px;
+  object-fit: cover; /* Keeps the aspect ratio intact */
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.card-body {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 15px;
+
+}
+
+/* Fade-in effect */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* On active state (triggered by JS) */
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}

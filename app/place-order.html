@@ -20,19 +20,18 @@
 </head>
 
 <body>
+    <div class="place-order">
 
     <!-- Navigation -->
     <div class="container ">
         <header class="header d-flex flex-wrap justify-content-center py-3 mb-4 mt-3">
-            <a href="../index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-                <span class="logo fw-bold fs-4">MOS Burgers</span>
-            </a>
+            <div class="logo-container">
+                <img src="../assets/images/logo.png" alt="Mr. Burger" class="logos">
+            </div>
 
             <nav class="navbar navbar-expand-lg">
                 <a href="../index.html" class="nav-link">Home</a>
-                <a href="menu.html" class="nav-link">Menu</a>
-                <a href="orders.html" class="nav-link">Orders</a>
-                <a href="reports.html" class="nav-link">Reports</a>
+             
                 <a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
@@ -42,13 +41,12 @@
     </div>
 
     <!-- Modal Add Customer -->
-    <div class="modal fade" id="modalAddCustomer" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal fade" id="modalAddCustomer" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" >
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="modalLabel">Add New Customer</h5>
-                    <button type="reset" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
-                        aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-4">
                     <form id="customerForm">
@@ -281,10 +279,7 @@
                                 <input type="text" class="form-control" id="additionalNotes"
                                     placeholder="Additional Notes">
                             </div>
-                            <!-- <div class="form-group mb-3">
-                            <input type="number" class="form-control fw-semibold" id="discount"
-                                placeholder="Discount %">
-                        </div> -->
+            
 
                             <div class="form-group m-2 d-flex justify-content-between">
 
@@ -305,9 +300,7 @@
 
                             </div>
                             <div class="form-group m-2 d-flex justify-content-end">
-                                <!-- <div id="spinner" class="spinner-border text-success m-4" role="status" aria-hidden="true">
-                                    <span class="visually-hidden" id="spinner">Loading...</span>
-                                  </div> -->
+             
                                 <button type="reset" class="btn btn-danger p-3 m-1 btnClear"
                                     id="btnClear">Clear</button>
                                 <button type="submit" class="btn btn-primary p-3 m-1 btnPlaceOrder"
@@ -360,11 +353,11 @@
                     <!-- Products will be displayed here -->
                 </div>
             </div>
-            <!-- <img src="../assets/images/place-order-img.png" class="hero-imgd-block mx-lg-auto img-fluid d-lg-block d-none"
-                    alt="Bootstrap Themes" width="700" height="500" loading="lazy"> -->
 
         </div>
     </div>
+
+</div>
 
 
     <script type="module" src="../js/app.js"></script>
